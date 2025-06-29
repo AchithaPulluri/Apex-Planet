@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Web Project</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header>
+    <h1>Pixel Pulse</h1>
+    <nav>
+      <a href="#contact">Contact</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Contact Form -->
+    <section class="form-section" id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <div class="error" id="nameError"></div>
+
+        <input type="email" id="email" placeholder="Your Email" required />
+        <div class="error" id="emailError"></div>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery-section" id="gallery">
+      <h2>Image Gallery</h2>
+      <input type="text" id="imageURL" placeholder="Paste image URL here" />
+      <button onclick="addImage()">Add Image</button>
+
+      <div class="gallery" id="imageGallery"></div>
+    </section>
+  </main>
+
+  <script src="script2.js"></script>
+</body>
+</html>

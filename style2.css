@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f7cac9, #92a8d1);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+/* Container Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+/* Gallery Section */
+.gallery-section input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #999;
+}
+
+.gallery-section button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color:black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallery {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
